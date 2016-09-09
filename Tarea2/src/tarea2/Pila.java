@@ -1,6 +1,4 @@
-
 package tarea2;
-
 /**
  *
  * @author Usersone
@@ -8,6 +6,8 @@ package tarea2;
 public class Pila {
     String[] pila;
     Integer tope,tam;
+     private boolean vacia;
+     //constructor que le deberemos pasar un dato de tipo entero e inicializa los demas datos...
     public Pila(Integer tamanio){
         tope=-1;
         pila=new String[tamanio];
@@ -21,7 +21,7 @@ public class Pila {
         else{
             System.out.println("Error de desbordamiento...");
         }
-    }
+    }//fin del metodo  push
     public String pop(){
     String resultado =" ";
     if(tope>-1){
@@ -33,7 +33,7 @@ public class Pila {
         System.out.println("Error de subdesbordamiento...");
     }
     return resultado;
-    }
+    }//fin del metodo pop
     public String peek(){
     String resultado="";
     if(tope>-1){
@@ -43,6 +43,20 @@ public class Pila {
         System.out.println("Error de subdesbordamiento...");
     }
     return resultado;
-    }
+    }//fin del metodo peek   
     
+    
+   
+            public void isVacia(boolean vacia){
+            this.vacia=vacia;
+            }//set del boolean que sera mi bandera...
+          
+            public boolean isVacia(){
+                for(int i=0;i<pila.length;i++){
+                pila[i]=null;
+                        }
+               vacia=false;
+        return vacia ;
+    }
+          
 }
