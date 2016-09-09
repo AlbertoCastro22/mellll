@@ -1,6 +1,5 @@
 
 package tarea2;
-
 /**
  *
  * @author Usersone
@@ -43,6 +42,5 @@ public class Pila {
         System.out.println("Error de subdesbordamiento...");
     }
     return resultado;
-    }
-    
+    }   
 }
