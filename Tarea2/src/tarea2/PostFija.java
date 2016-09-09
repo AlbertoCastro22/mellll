@@ -18,8 +18,6 @@ public class PostFija {
    private boolean band;
    String []cadena=new String[tam];
    public void Cadena(){
-   
-    
     }
    public boolean ischecaCaracter(){
         if(simbolo.equals("(")){
@@ -37,8 +35,7 @@ public class PostFija {
                 else{
                     if(simbolo.equals("}")){
                          band=true;
-                    }
-                
+                    }      
                  else{
                     if(simbolo.equals("[")){
                 band=true;
@@ -50,11 +47,9 @@ public class PostFija {
                         else{
                             System.out.println("Caracter no aceptado");
                         }//se cierra el sexto else
-                    }//se cierra el quinto else
-                    
+                    }//se cierra el quinto else             
                 }//se cierra el cuarto else
             }//se cierra el tercer else
-    
 }//se cierra el segundo else
         }//se cierra el primer else
          return band;
@@ -62,45 +57,30 @@ public class PostFija {
      
      @SuppressWarnings("ResultOfMethodCallIgnored")
    public String ConversionPostFija(String ei){
-    
     while(ei.length()!=0){
         simbolo=ei.substring(1, 1);
         ei.substring(1, ei.length()-1);
         if(simbolo.equals("(")){
            this.ischecaCaracter();
             p.push( simbolo);
-        }//fin del if de la linea 19
-        
+        }//fin del if de la linea 19  
         else{
         if(simbolo.equals(")")){
         while(!p.peek().equals("(")){
             resultado= resultado+p.pop();
            }//fin del while de la linea 24
-        
         }//fin del if de la linea 23
-        
         else{
-              
                while(this.ischecaCaracter()){
                    resultado=resultado+p.pop();
                }//fin del while de la linea 34
-               
-                  p.push(simbolo);
-               
-              
-               
+                  p.push(simbolo);   
                 }//fin del else de la linea 29
-        
-        }//fin del else de la linea 22
-        
-    }//fin del while de la linea 16
-    
+        }//fin del else de la linea 22  
+    }//fin del while de la linea 16 
     while(!p.isVacia()){
-    resultado=resultado+p.pop();
-    
+    resultado=resultado+p.pop(); 
     }//fin del while de la linea 42
-    
    return resultado;
-   
     }//fin del metodo conversion
 }
