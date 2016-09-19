@@ -43,6 +43,7 @@ public class Pila {
         System.out.println("Error de subdesbordamiento...");
     }
     return resultado;
+//<<<<<<< HEAD
     }//fin del metodo peek   
     
     
@@ -59,4 +60,5 @@ public class Pila {
         return vacia ;
     }
           
-}
+
+    }   
