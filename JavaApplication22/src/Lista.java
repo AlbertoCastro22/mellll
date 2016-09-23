@@ -255,4 +255,17 @@ public class Lista <T extends Comparable<T>>{
    }
     return s+""+null;
     }
+     /**
+      * otro metodo para buscar un dato
+      */
+     public Nodo<T> buscar(T m){
+        Nodo<T> aux = inicio;
+        while(aux != null){
+              if(aux.getDato().compareTo(m) == 0)      
+                 return aux;
+              aux = aux.getSiguiente();
+        } 
+        System.out.println(aux);
+        return null;
+     }
 }

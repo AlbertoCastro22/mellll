@@ -20,9 +20,9 @@ public class Test {
      System.out.println(miLista);
       System.out.println("_____________________________________________\nAgregar antes de");
      miLista2.AgregarInicio(300);
-     miLista.AgregarAntesDE(30);
-    // miLista.InsertarAntesDe(10, 30);
-     // System.out.println(miLista);
+    miLista.AgregarAntesDE(30);
+    miLista.InsertarAntesDe(10, 20);
+     System.out.println(miLista);
       System.out.println("_____________________________________________\nInsertaun dato despues de");
      miLista.InsertarDespuesDe(2, 1);
      System.out.println(miLista);
@@ -36,7 +36,8 @@ public class Test {
      miLista.InsertarAntesDe(10,1);
      System.out.println(miLista);
      System.out.println("_____________________________________________\nBuscar un dato");
-     miLista.busca(1);
+     //miLista.busca(409);
+     miLista.buscar(1);
      System.out.println(miLista);
      System.out.println("_____________________________________________\nRrecorrer la lista de forma iterativa");
      miLista.Recorrei();
