@@ -36,7 +36,7 @@ public class Test {
      miLista.InsertarAntesDe(10,1);
      System.out.println(miLista);
      System.out.println("_____________________________________________\nBuscar un dato");
-     //miLista.busca(409);
+     
      miLista.buscar(1);
      System.out.println(miLista);
      System.out.println("_____________________________________________\nRrecorrer la lista de forma iterativa");
@@ -44,7 +44,7 @@ public class Test {
      System.out.println(miLista);
       System.out.println("_____________________________________________\nRrecorrer la lista pasandole un nodo como parametro");
      miLista.Recorrer_R(miLista.getInicio());
-    // System.out.println(miLista);
+   
     }
     
 }

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Usersone
@@ -16,7 +15,6 @@ public class Lista <T extends Comparable<T>>{
     public void setInicio(Nodo<T> inicio){
         this.inicio=inicio;
     }
-
     public Nodo<T> getInicio(){
         return inicio;
     }
@@ -40,7 +38,6 @@ public class Lista <T extends Comparable<T>>{
         /**
          * si la lista esta vacia se generara un NullPointerException
          */
-         
         if(inicio==null){
             this.AgregarInicio(dato);
         }
@@ -243,7 +240,7 @@ public class Lista <T extends Comparable<T>>{
                 }
             }
     }/** 
-     * metodo para sobreescribir la clase lista
+     * metodo para sobreescribir el tipo de dato en la clase...
      */
      public String toString(){
    

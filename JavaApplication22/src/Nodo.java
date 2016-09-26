@@ -32,6 +32,5 @@ public class Nodo<T> {
         s+="["+dato+"]-->";
     return s;
     }
-     
 }
 
